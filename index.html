@@ -1,90 +1,431 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
-        <title></title>
+        <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Waterbrook International Pathways</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
         <link rel="stylesheet" href="./static/css/wip.css">
         <script src="./static/js/wip.js"></script>
+        <script src="https://kit.fontawesome.com/0f2db4d6c2.js" crossorigin="anonymous"></script>
     </head>
     <body>
-        <div style="width: 100%;">
-            <header>
-                <div class="flex-row my_margin" style="justify-content: space-between;">
-                    <div class="flex-row">
-                        <img src="./static/images/logo.png" alt="wip logo" width="50vw">
-                        <span>Waterbrook International Pathways</span>
-                    </div>
-                    <div class="dropdown">
-                        <button class="dropbtn">Menu</button>
-                        <div class="dropdown-content">
-                            <a href="#">Study Abroad</a>
-                            <a href="#">Events</a>
-                            <a href="#">Our Services</a>
-                            <a href="#">About</a>
-                            <a href="#">Get Advice</a>
-                        </div>
-                    </div>
-                    <div class="bss links">
-                        <a href="#">Study Abroad</a>
-                        <a href="#">Events</a>
-                        <a href="#">Our Services</a>
-                        <a href="#">About</a>
-                    </div>
-                    <div class="bss">
-                        <button class="button">Get Advice</button>
+        <nav class="navbar navbar-expand-lg navbar-light"> <!--style="height: 40px;"-->
+            <div class="container-fluid my-nav">
+                <a href="#" class="navbar-brand my-nav-brand">
+                    <img src="./static/images/logo.png" alt="" width="50" height="50" class="d-inline-block align-text-top">
+                    <span class="d-none d-sm-block">
+                        Waterbrook International Pathways
+                    </span>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                    <div class="navbar-nav">
+                        <a href="#" class="nav-link mx-4">Study Abroad</a>
+                        <a href="#" class="nav-link mx-4">Events</a>
+                        <a href="#" class="nav-link mx-4">Our Services</a>
+                        <a href="#" class="nav-link mx-4">About</a>
                     </div>
                 </div>
-            </header>
-            <div>
-                <div id="slider_container" style="position:relative">
-                    <img src="./static/images/image1.png" alt="" width="100%">
-                    <div id="future">
-                        <h3>The Future In You</h3>
-                        <p>
-                            At WIP, we help you find the overseas education opportunity that has the greatest potential to impact your future
-                        </p>
-                        <button class="button rss">
-                            <span>Meet Our Advisors</span>
-                            <!-- <i class="fas fa-arrow-right"></i>  -->
-                        </button>
-                    </div>
+                <button type="button" class="btn btn-outline-secondary d-none d-md-none d-lg-block d-xl-block d-xxl-block advice">Get Advice <i class="fas fa-arrow-right"></i> </button>
+            </div>
+        </nav>
+        <div class="container-fluid px-0 position-relative">
+          <img src="./static/images/image1.png" alt="" class="img-fluid slider_images fades">
+          <img src="./static/images/image2.png" alt="" class="img-fluid hidden slider_images">
+          <img src="./static/images/image3.png" alt="" class="img-fluid hidden slider_images">
+          <img src="./static/images/image4.png" alt="" class="img-fluid hidden slider_images">
+          <div class="container-fluid position-absolute top-0" style="color: white;" id="future_container">
+            <div class="row align-items-center" id="future_col">
+              <div class="col-lg-10" id="future_row"> <!--col-lg-6 col-8-->
+                <h1 id="future_h1">The Future In You</h1>
+                <h1 id="future_h1_2">Your Pathway To Global Success</h1>
+                <div>
+                  <p id="future_p">
+                    At WIP, we help you find the overseas education opportunity that has the greatest potential to impact your future
+                  </p>
                 </div>
-            </div>
-            <div id="dot_div">
-                <span class="dot active_dot"></span> 
-                <span class="dot"></span> 
-                <span class="dot"></span> 
-                <span class="dot"></span> 
-            </div>
-            <div>
-                <div id="win">
-                    <div>
-                        <div style="width: 100%; text-align: center;">
-                            <h3 style="font-weight: bold; font-size: 2rem; margin: 0;">WIP in numbers</h3>
-                            <p style="width: 60%; margin: 0 auto; margin-bottom: 3rem;" class="paras">
-                                At WIP, we connect international students with the overseas education opportunities that have the greatest potential to impact their future. We help students around the world identify their goals, and decide which direction is the best way forward for them, by providing professional advice on studying abroad in the UK, the US, Australia, Ireland, Canada and other countries.
-                            </p>
-                        </div>
-                        <div id="stat_div">
-                            <div>
-                                <span class="stat_no">33+</span>
-                                <hr class="hr">
-                                <span class="stat_name">Local Offices</span>
-                            </div>
-                            <div>
-                                <span class="stat_no">100,000+</span>
-                                <hr class='hr'>
-                                <span class="stat_name">Students Placed</span>
-                            </div>
-                            <div>
-                                <span class="stat_no">29</span>
-                                <hr class='hr'>
-                                <span class="stat_name">Years of Experience</span>
-                            </div>
-                        </div>
-                    </div>
+                <div id="future_btn_grp">
+                  <button type="button" class="btn btn-light advice">
+                    Meet our Advisors <i class="fas fa-arrow-right"></i>
+                  </button>
+                  <div id="dot_div">
+                    <span class="dot active_dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                  </div>
                 </div>
+              </div>
             </div>
+          </div>
         </div>
+        <div class="container shadow-lg rounded" id="wiin" style="padding: 50px 25px;">
+          <div class="row justify-content-center">
+            <div class="col-12 text-center">
+              <div>
+                <h1><b>WIP in numbers</b></h1>
+                <div class="text-secondary col-7 mx-auto">
+                  At WIP” we connect international students with incredible study abroad opportunities that can truly bring their dreams to reality .
+                  Our dedicated team is here to help students worldwide identify their goals and choose the best path forward, providing expert advice on studying in the UK, US, Ireland, Canada, and beyond!
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row justify-content-center" style="margin-top: 20px;">
+            <div id="stat_div" class="col-10 align-self-center d-flex justify-content-evenly">
+              <div>
+                <span class="stat_no custom_color fs-2 p_color">2+</span>
+                <hr class="hr c_color">
+                <span class="stat_name text-secondary">Local Offices</span>
+              </div>
+              <div>
+                <span class="stat_no custom_color fs-2 p_color">300+</span>
+                <hr class='hr c_color'>
+                <span class="stat_name text-secondary">Students Placed</span>
+              </div>
+              <div>
+                <span class="stat_no custom_color fs-2 p_color">5</span>
+                <hr class='hr c_color'>
+                <span class="stat_name text-secondary">Years of Experience</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container pt-2">
+          <div class="d-flex flex-column justify-content-center align-items-center">
+            <div class="col-6 d-flex justify-content-center custom_color">
+              <div>
+                <span id="wwa_ic">Who we are</span>
+              </div>
+            </div>
+            <div class="col-8 text-center mt-4 mb-4">
+              <div>
+                <h3>
+                  <b>WIP, Your ultimate guide to international education! We connect students with amazing study abroad opportunities across the globe</b>
+                </h3>
+              </div>
+            </div>
+            <div class="col-7 text-center">
+              <div>
+                <span class="custom_color">WIP is your gateway to success in English-speaking countries. With a vast network of advisors and alumni, valuable resources, and insightful events, we provide life-changing expert advice.</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="d-none d-lg-block" style="height: 75px;"></div>
+        <div class="container-fluid pt-5" style="background-color: rgba(242, 242, 242, 1);">
+          <div class="d-flex flex-column justify-content-center align-items-center">
+            <div class="custom_color">
+              <div>
+                <h3><b>How it works</b></h3>
+              </div>
+            </div>
+            <div class="d-flex flex-row justify-content-between align-items-center col-12 col-lg-11 mt-5 py-3 px-4 rounded-3 bg-light tabs" style="z-index: 1;">
+              <div class="active_tab col-6 col-lg-3 text-center">Book an appointment</div>
+              <div class="col-6 col-lg-3 text-center">Discuss with our advisors</div>
+              <div class="col-6 col-lg-3 text-center">Prepare your application</div>
+              <div class="col-6 col-lg-3 text-center">Get a visa</div>
+            </div>
+            <div class="d-flex flex-column flex-lg-row col-8 col-lg-11 hiw active_content mt-5 mt-lg-0">
+              <div class="col-lg-5 col-12 big_img order-lg-1 order-2">
+                <img src="./static/images/baa1.png" alt="" class="images">
+                <img src="./static/images/baa2.png" alt="" width="50px" height="50px" style="margin-top: -25px; margin-left: 25px;">
+              </div>
+              <div class="row col-lg-7 col-12 ps-lg-5 d-flex align-items-center cont order-lg-2 order-1 chng">
+                <div class="d-flex flex-column px-0">
+                  <div class="my-3 baa">
+                    <div class="fs-5 custom_color my-3">
+                      <b>Book an appointment to speak with us</b>
+                    </div>
+                    <div>
+                      It's really easy to fill out a form, we'll match one of our friendly advisors according to your individual needs.
+                    </div>
+                  </div>
+                  <div>
+                    <button type="button" class="btn btn-outline-secondary mt-5 d-none d-lg-block">
+                      Book an appointment <i class="fas fa-arrow-right"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="d-flex flex-column flex-lg-row col-8 col-lg-11 hiw d-none mt-5 mt-lg-0 chng">
+              <div class="col-lg-5 col-12 big_img order-lg-1 order-2">
+                <img src="./static/images/dwoa1.png" alt="" class="images" style="border-top-left-radius: 15px; border-bottom-left-radius: 15px;">
+                <img src="./static/images/dwoa2.png" alt="" width="50px" height="50px" style="margin-top: -25px; margin-left: 25px;">
+              </div>
+              <div class="row col-lg-7 col-12 ps-lg-5 d-flex align-items-center cont order-lg-2 order-1">
+                <div class="d-flex flex-column px-0">
+                  <div class="my-3 baa">
+                    <div class="fs-5 custom_color my-3">
+                      <b>Discuss your options with our advisors</b>
+                    </div>
+                    <div>
+                      Explore your possibilities with our expert advisors and unlock the perfect pathway to your dreams!
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="d-flex flex-column flex-lg-row col-8 col-lg-11 hiw d-none mt-5 mt-lg-0 chng">
+              <div class="col-lg-5 col-12 big_img order-lg-1 order-2">
+                <img src="./static/images/pya1.png" alt="" class="images">
+                <img src="./static/images/pwa2.png" alt="" width="50px" height="50px" style="margin-top: -25px; margin-left: 25px;">
+              </div>
+              <div class="row col-lg-7 col-12 ps-lg-5 d-flex align-items-center cont order-lg-2 order-1">
+                <div class="d-flex flex-column px-0">
+                  <div class="my-3 baa">
+                    <div class="fs-5 custom_color my-3">
+                      <b>Prepare your paperwork for your application</b>
+                    </div>
+                    <div>
+                      We'll help you sort all the forms and paperwork you need for your application, and even walk through the application with you.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="d-flex flex-column flex-lg-row col-8 col-lg-11 hiw d-none mt-5 mt-lg-0 chng">
+              <div class="col-lg-5 col-12 big_img order-lg-1 order-2">
+                <img src="./static/images/gav1.png" alt="" class="images">
+                <img src="./static/images/gav2.png" alt="" width="50px" height="50px" style="margin-top: -25px; margin-left: 25px;">
+              </div>
+              <div class="row col-lg-7 col-12 ps-lg-5 d-flex align-items-center cont order-lg-2 order-1">
+                <div class="d-flex flex-column px-0">
+                  <div class="my-3 baa">
+                    <div class="fs-5 custom_color my-3">
+                      <b>Get a visa, find accommodation, & book a flight</b>
+                    </div>
+                    <div>
+                      We'll help you sort all the forms and paperwork you need for your application, and even walk through the application with you.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container mt-5">
+          <div class="row">
+            <div class="col-12 d-flex align-items-center flex-column">
+              <div class="mb-5">
+                <h3><b>Global Stories</b></h3>
+              </div>
+              <div class="d-flex flex-column align-items-center testimonials active_testimonial">
+                <img src="./static/images/portrait.png" alt="" width="50px" height="50px">
+                <div class="text-center fs-6 w-50 mt-3">
+                  <b>“Absolutely <img src="./static/images/100.png" alt="100 logo" width="15px">, i got my visa in no time. Fantastic service rom securing admission to getting my visa”.</b>
+                </div>
+                <div class="mt-3 c_color">Beckhercules</div>
+              </div>
+              <div class="d-flex flex-column align-items-center testimonials d-none">
+                <img src="./static/images/portrait.png" alt="" width="50px" height="50px">
+                <div class="text-center fs-6 w-50 mt-3">
+                  <b>“Absolutely <img src="./static/images/100.png" alt="100 logo" width="15px">, i got my visa in no time. Fantastic service rom securing admission to getting my visa”.</b>
+                </div>
+                <div class="mt-3 c_color">John Paul</div>
+              </div>
+              <div class="d-flex flex-column align-items-center testimonials d-none">
+                <img src="./static/images/portrait.png" alt="" width="50px" height="50px">
+                <div class="text-center fs-6 w-50 mt-3">
+                  <b>“Absolutely <img src="./static/images/100.png" alt="100 logo" width="15px">, i got my visa in no time. Fantastic service rom securing admission to getting my visa”.</b>
+                </div>
+                <div class="mt-3 c_color">John Slime</div>
+              </div>
+              <div class="mt-5">
+                <i class="fas fa-arrow-left prev mx-5 fs-6"></i>
+                <i class="fas fa-arrow-right next mx-5 fs-6"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container-fluid mt-5 py-5" style="background-color: rgba(242, 242, 242, 1);">
+          <div class="row">
+            <div class="col d-flex flex-column centrable">
+              <div class="col mb-3">
+                <div class="">
+                  <span class="rss px-3 py-2 rounded-3 p_color">Resources</span>
+                </div>
+              </div>
+              <div class="col mt-3 d-flex flex-row justify-content-between">
+                <h3 class="p_color">
+                  <b>News & Blogs</b>
+                </h3>
+                <div class="d-none d-lg-block">
+                  <i class="fas fa-arrow-left prev mx-5 fs-6"></i>
+                  <i class="fas fa-arrow-right next mx-5 fs-6"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row mt-5 d-flex">
+            <div class="col-12 d-flex flex-column flex-lg-row justify-content-around centrable px-0">
+              <div class="col-lg-3 col-8 mb-3 ms-0 blogs pt-5 pb-2 align-items-center d-flex justify-content-center" style="background-image: url('./static/images/image8.jpg');">
+                <div class="row mx-0 col-7 p_color">
+                  <div class="px-0">
+                    <div class="mb-2">
+                      <span class="rss px-3 py-2 rounded-3">News</span>
+                    </div>
+                  </div>
+                  <div class="row px-0 mx-0 bg-light rounded-3 py-3 mt-2">
+                    <div class="mvs">July 17,2022</div>
+                    <div>
+                      <h4 class="my-2">How to choose a study abroad agent</h4>
+                    </div>
+                    <div class="mvs">Read more <i class="fas fa-arrow-right"></i></div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-8 mb-3 ms-0 blogs pt-5 pb-2 align-items-center d-flex justify-content-center" style="background-image: url('./static/images/image7.jpg');">
+                <div class="row mx-0 col-7 p_color">
+                  <div class="px-0">
+                    <div class="mb-2">
+                      <span class="rss px-3 py-2 rounded-3">Blog</span>
+                    </div>
+                  </div>
+                  <div class="row px-0 mx-0 bg-light rounded-3 py-3 mt-2">
+                    <div class="mvs">July 17,2022</div>
+                    <div>
+                      <h4 class=" my-2">How to choose a study abroad agent</h4>
+                    </div>
+                    <div class="mvs">Read more <i class="fas fa-arrow-right"></i></div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-8 mb-3 ms-0 blogs pt-5 pb-2 align-items-center d-flex justify-content-center" style="background-image: url('./static/images/image6.jpg');">
+                <div class="row mx-0 col-7 p_color">
+                  <div class="px-0">
+                    <div class="mb-2">
+                      <span class="rss px-3 py-2 rounded-3">News</span>
+                    </div>
+                  </div>
+                  <div class="row border px-0 mx-0 bg-light rounded-3 py-3 mt-2">
+                    <div class="mvs">July 17,2022</div>
+                    <div>
+                      <h4 class=" my-2">How to choose a study abroad agent</h4>
+                    </div>
+                    <div class="mvs">Read more <i class="fas fa-arrow-right"></i></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container-fluid d-flex justify-content-center py-lg-5 fyd">
+          <div class="row col-lg-8 col-12 shadow-lg">
+            <div class="col d-flex flex-column flex-lg-row justify-content-between align-items-center px-5">
+              <div class="col-lg-3 d-flex d-lg-block flex-column align-items-center">
+                <div>
+                  <h2>Find Your Direction</h2>
+                </div>
+                <div>
+                  <button class="btn btn-outline-dark mt-3">
+                    Explore <i class="fas fa-arrow-right"></i>
+                  </button>
+                </div>
+              </div>
+              <div>
+                <img src="./static/images/directions.png" alt="" width="400px" height="400px">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container-fluid py-5 d-flex flex-column justify-content-center text-white footer px-0 align-items-center" style="background-color: rgba(34, 34, 34, 1);">
+          <div class="row col-8 col-lg-11 d-flex justify-content-between mb-5 mx-0">
+            <div class="col-6 col-lg-2 px-0 d-none d-lg-block">
+              <div class="ff d-flex align-items-center">
+                <img src="./static/images/logo.png" alt="" width="50px" height="50px" class="d-inline-block align-text-center">
+                <span>
+                  <b>Waterbrook International Pathways</b>
+                </span>
+              </div>
+              <div class="my-1 text-secondary">
+                At WIP, we connect students around the world with overseas education opportunities that have the greatest potential to impact their future.
+              </div>
+            </div>
+            <div class="col-6 col-lg-2">
+              <div class="ff d-flex align-items-center">
+                <b>Study Abroad</b>
+              </div>
+              <div class="my-1 text-secondary">
+                Universities
+              </div>
+              <div class="my-1 text-secondary">
+                Boarding School
+              </div>
+              <div class="my-1 text-secondary">
+                University Ranking
+              </div>
+            </div>
+            <div class="col-6 col-lg-2">
+              <div class="ff d-flex align-items-center">
+                <b>Events</b>
+              </div>
+              <div class="my-1 text-secondary">
+                All
+              </div>
+            </div>
+            <div class="col-6 col-lg-2">
+              <div class="ff d-flex align-items-center">
+                <b>Services</b>
+              </div>
+              <div class="my-1 text-secondary">
+                Scholarship
+              </div>
+            </div>
+            <div class="col-6 col-lg-2">
+              <div class="ff d-flex align-items-center">
+                <b>About us</b>
+              </div>
+              <div class="my-1 text-secondary">
+                Our Offices
+              </div>
+              <div class="my-1 text-secondary">
+                Meet Our Team
+              </div>
+              <div class="my-1 text-secondary">
+                Latest News
+              </div>
+              <div class="my-1 text-secondary">
+                Blog
+              </div>
+            </div>
+          </div>
+          <div class="row col-11 mx-0 d-block d-lg-none">
+            <hr class="">
+            <div class="row col-12 d-flex flex-row justify-content-between align-items-center py-2 px-0">
+              <div class="col-8">
+                <div class="ff d-flex align-items-center">
+                  <img src="./static/images/logo.png" alt="" width="50px" height="50px" class="d-inline-block align-text-center">
+                  <span>
+                    <b>Waterbrook International Pathways</b>
+                  </span>
+                </div>
+              </div>
+              <div class="col-4">
+                <div class="my-1 text-secondary">
+                  At WIP, we connect students around the world with overseas education opportunities that have the greatest potential to impact their future.
+                </div>
+              </div>
+            </div>
+          </div>
+          <hr class="col-11 mb-3 mx-3">
+          <div class="row col-11 d-flex flex-row justify-content-between py-3 px-0">
+            <div class="col-8 col-lg-4 text-secondary">Get Advice - © Copyright 2023 waterbrook International Pathways</div>
+            <div class="col-3 col-lg-2 d-flex flex-row justify-content-around fs-6">
+              <i class="fab fa-instagram"></i>
+              <i class="fab fa-facebook"></i>
+              <i class="fab fa-twitter"></i>
+            </div>
+          </div>
+        </div>
+        <!-- <div style="height: 200px;"></div> -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <!-- <div style="display: none;">Discuss with our advisors</div>
+        <div style="display: none;">Prepare your application</div>
+        <div style="display: none;">Get a visa</div> -->
     </body>
 </html>
