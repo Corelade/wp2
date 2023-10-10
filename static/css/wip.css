@@ -246,7 +246,7 @@ textarea{
     .pop_up{
         left: 10%;
         width: 80%;
-        height: 80%;
+        height: 90%;
         /* overflow-y: scroll; */
     }
 }
