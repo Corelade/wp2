@@ -140,7 +140,6 @@ body{
     z-index: 6;
     position: fixed;
     top: 5%;
-    height: 90%;
     background-color: white;
     display: none;
     /* padding: 0px 50px; */
@@ -156,6 +155,7 @@ textarea{
     .pop_up{
         left: 25%;
         width: 50%;
+        height: 90%;
     }
     .baa{
         font-size: 20px;
@@ -246,6 +246,7 @@ textarea{
     .pop_up{
         left: 10%;
         width: 80%;
-        overflow-y: scroll;
+        height: 80%;
+        /* overflow-y: scroll; */
     }
 }
