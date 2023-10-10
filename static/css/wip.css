@@ -140,8 +140,6 @@ body{
     z-index: 6;
     position: fixed;
     top: 5%;
-    left: 25%;
-    width: 50%;
     height: 90%;
     background-color: white;
     display: none;
@@ -155,9 +153,10 @@ textarea{
 }
 
 @media (min-width: 992px){
-    /* .chr{
-        width: 80%;
-    } */
+    .pop_up{
+        left: 25%;
+        width: 50%;
+    }
     .baa{
         font-size: 20px;
     }
@@ -245,7 +244,9 @@ textarea{
         padding-right: 0;
     }
     .pop_up{
-        overflow-y: scroll;
+        left: 10%;
+        width: 80%;
+        /* background-color: white; */
         /* display: none; */
         /* padding: 0px 50px; */
     }
