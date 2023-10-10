@@ -52,9 +52,22 @@ document.addEventListener('DOMContentLoaded', ()=>{
   let prev = document.querySelector('.prev');
   let next = document.querySelector('.next');
 
+  // prev.style.color = 'gray';
+
   let i = 0
+
+  function check(){
+    if(i==0){
+      prev.style.color = 'gray';
+    }else{
+      prev.style.color = 'black';
+    }
+  }
+  check();
+
   next.onclick = ()=>{
     i ++;
+    check();
     if(i > (testimonials.length - 1)){
       i = 0
     }
@@ -74,6 +87,7 @@ document.addEventListener('DOMContentLoaded', ()=>{
     if(i > (testimonials.length - 1)){
       i = 0
     }
+    check();
     testimonials.forEach(testimonial => {
       if(!testimonial.classList.contains('d-none')){
         testimonial.classList.add('d-none');
