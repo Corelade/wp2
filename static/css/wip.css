@@ -246,8 +246,6 @@ textarea{
     .pop_up{
         left: 10%;
         width: 80%;
-        /* background-color: white; */
-        /* display: none; */
-        /* padding: 0px 50px; */
+        overflow-y: scroll;
     }
 }
