@@ -89,8 +89,14 @@ document.addEventListener('DOMContentLoaded', ()=>{
   let pop_up = document.querySelector('.pop_up');
   let backdrop = document.querySelector('#backdrop');
   let close = document.querySelector('.close');
+  let moa = document.querySelector('.moa');
 
   bapt.onclick = ()=>{
+    body.classList.add('no_scroll');
+    backdrop.style.display = 'block';
+    pop_up.style.display = 'block';
+  }
+  moa.onclick = ()=>{
     body.classList.add('no_scroll');
     backdrop.style.display = 'block';
     pop_up.style.display = 'block';

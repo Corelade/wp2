@@ -145,7 +145,7 @@ body{
     height: 90%;
     background-color: white;
     display: none;
-    padding: 0px 50px;
+    /* padding: 0px 50px; */
 }
 textarea{
     resize: none;
@@ -243,5 +243,12 @@ textarea{
     .fyd{
         padding-left: 0;
         padding-right: 0;
+    }
+    .pop_up{
+        left: 10%;
+        width: 80%;
+        background-color: white;
+        /* display: none; */
+        /* padding: 0px 50px; */
     }
 }
