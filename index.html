@@ -145,7 +145,7 @@
                     </div>
                   </div>
                   <div>
-                    <button type="button" class="btn btn-outline-secondary mt-5 d-none d-lg-block">
+                    <button type="button" class="btn btn-outline-secondary mt-5 d-none d-lg-block" id="bapt">
                       Book an appointment <i class="fas fa-arrow-right"></i>
                     </button>
                   </div>
@@ -414,7 +414,7 @@
           </div>
           <hr class="col-11 mb-3 mx-3">
           <div class="row col-11 d-flex flex-row justify-content-between py-3 px-0">
-            <div class="col-8 col-lg-4 text-secondary">Get Advice - © Copyright 2023 waterbrook International Pathways</div>
+            <div class="col-8 col-lg-8 text-secondary">Get Advice - © Copyright 2023 waterbrook International Pathways | 24,kudeti Avenue, Onireke GRA Ibadan</div>
             <div class="col-3 col-lg-2 d-flex flex-row justify-content-around fs-6">
               <i class="fab fa-instagram"></i>
               <i class="fab fa-facebook"></i>
@@ -422,10 +422,59 @@
             </div>
           </div>
         </div>
-        <!-- <div style="height: 200px;"></div> -->
+        <div id="backdrop"></div>
+        <div class="container pop_up">
+          <div class="row d-flex justify-content-center flex-column">
+            <div class="col d-flex flex-row align-items-center justify-content-between py-4">
+              <div class="fs-1">Contact Us</div>
+              <div class="fs-3 text-center close" style="cursor: pointer; border:1px solid black; border-radius: 50%; width: 40px; height: 40px;">
+                &times;
+              </div>
+            </div>
+            <form action="">
+              <div class="row mx-0 flex-row">
+                <div class="col-6 mb-3">
+                  <label for="firstname" class="form-label">First Name</label>
+                  <input type="email" class="form-control" id="firstname" placeholder="">
+                </div>
+                <div class="col-6 mb-3">
+                  <label for="lastname" class="form-label">Last Name</label>
+                  <input type="email" class="form-control" id="lastname" placeholder="">
+                </div>
+                <div class="col-6 mb-3">
+                  <label for="email" class="form-label">Email</label>
+                  <input type="email" class="form-control" id="email" placeholder="">
+                </div>
+                <div class="col-6 mb-3">
+                  <label for="date" class="form-label">Book a date</label>
+                  <input type="date" class="form-control" id="date" placeholder="">
+                </div>
+                <div class="mb-3">
+                  <label for="message" class="form-label">Message</label>
+                  <textarea class="form-control" id="message" rows="5"></textarea>
+                </div>
+                <div class="d-flex justify-content-end">
+                  <button class="btn btn-outline-secondary rounded-0">Submit</button>
+                </div>
+              </div>
+            </form>
+            <div class="col d-flex flex-row justify-content-evenly mt-4">
+              <div class="me-0 d-flex flex-row align-items-center">
+                <span class="d-flex justify-content-around align-items-center flex-row me-2" style="width: 40px; height: 40px; border-radius: 50%; border: 1px solid black;"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone" viewBox="0 0 16 16">
+                  <path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
+                </svg>
+                </span>07047001301 | 07047001302
+              </div>
+              <div class=" d-flex flex-row align-items-center">
+                <span class="d-flex justify-content-around align-items-center flex-row me-2" style="width: 40px; height: 40px; border-radius: 50%; border: 1px solid black;"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16">
+                  <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z"/>
+                </svg>
+                </span>Info@waterbrookip.com
+              </div>
+            </div>
+            <!-- <div class="col">Hello</div> -->
+          </div>
+        </div>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-        <!-- <div style="display: none;">Discuss with our advisors</div>
-        <div style="display: none;">Prepare your application</div>
-        <div style="display: none;">Get a visa</div> -->
     </body>
 </html>

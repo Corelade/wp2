@@ -120,6 +120,39 @@ body{
 .mvs{
     font-size: 10px;
 }
+#backdrop{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 1);
+    opacity: 0.5;
+    margin: 0;
+    padding: 0;
+    z-index: 5;
+    display: none;
+}
+.no_scroll{
+    overflow: hidden;
+}
+.pop_up{
+    z-index: 6;
+    position: fixed;
+    top: 5%;
+    left: 25%;
+    width: 50%;
+    height: 90%;
+    background-color: white;
+    display: none;
+    padding: 0px 50px;
+}
+textarea{
+    resize: none;
+}
+.close:hover{
+    background-color: #bbb;
+}
 
 @media (min-width: 992px){
     /* .chr{
